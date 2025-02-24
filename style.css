@@ -1,0 +1,39 @@
+body {
+    margin: 20px;
+    background-color: rgb(59, 59, 59);
+}
+
+#container {
+    max-width: 760px;
+    margin: auto;
+    border: 3px solid white;
+    background: rgb(236, 236, 236);
+}
+
+img {
+    width: 100%;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+#images img{
+    height: 150px;
+}
+
+.fade-In {
+    animation: fadeIn 0.6s ease-in forwards;
+}
+
+@keyframes fade-In {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
